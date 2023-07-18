@@ -1,0 +1,145 @@
+/* Element with id sidebar:
+	   position fixed (top 65px, right 8px)
+	   max-width 80px
+	   color blue
+	   background cyan */
+#sidebar {
+	position: fixed;
+	top: 65px;
+	right: 8px;
+	max-width: 80px;
+	color: blue;
+	background-color: cyan;
+}
+
+
+
+/* h1:
+	   position sticky (including -webkit-sticky; Safari)
+	   top 0
+	   height 40px
+	   background color green
+	   border 2px solid #4CAF50
+	   NOTE: your CSS should not have a universal selector (*) which sets margin to 0, or you won't see the effect of the sticky header */
+h1 {
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+	height: 40px;
+	background-color: green;
+	border: solid;
+	border-color: #4CAF50;
+	border-width: 2px;
+}
+
+
+
+/* paragraph with id shy:
+	   float right */
+#shy {
+	float: right; 
+}
+
+
+
+/* Element with id lotsaText:
+	   position relative (left 500px)
+	   background color orange and max-width 100px */
+#lotsaText {
+	position: relative;
+	left: 500px;
+	background-color: orange;
+	max-width: 100px;
+}
+
+
+
+/* Element with class important:
+	   position absolute (right 200px, top 0)
+	   Remember this has an absolute offset from the ancestor (lotsaText)
+	   Since we specify right, this is 200px from the right of lotsaText.
+	   Try changing the max-width of lotsaText (and also the right value of important) to see this
+	   background color yellow
+	   height 100px, width 150px
+	   overflow scroll */
+.important {
+	position: absolute;
+	right: 200px;
+	top: 0px;
+	background-color: yellow;
+	height: 100px;
+	width: 150px;
+	overflow: scroll;
+}
+
+
+
+/* Element with class more-important
+	   background-color pink
+	   position relative (left 30px, top -15px)
+	   width 200px 
+	   set display: none or visibility: hidden */
+.more-important {
+	background-color: pink;
+	position: relative;
+	left: 30px;
+	top: -15px;
+	width: 200px;
+	display: none;
+	/* visibility: hidden; */
+}
+
+
+
+/* page-container:
+	   styled exactly the same as the example */
+#page-container {
+	position: relative;
+	min-height: 100vh;
+}
+
+
+
+/* content-wrap:
+	   similar to example, but let's make our bottom padding 3rem
+	   give a background color of purple (so we can see what's included)
+	   NOTE: There's white space around the content...remember the universal selector? See what happens when you include that (with margin and padding set to 0) */
+#content-wrap {
+	padding-bottom: 3rem;
+	background-color: purple;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/* div with class not-important:
+	   this is similar to #footer in the example
+	   position absolute (bottom 0)
+	   width 100%
+	   height 3rem (should match bottom padding of content wrap)
+	   background color #00FF00 */
+.not-important {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 3rem;
+	background-color: #00FF00;
+}
+
+
+
+/* paragraph inside not-important:
+	   we can use a combinator for this: div.not-important > p
+	   set the color to red
+	   top margin to .1em
+	   bottom margin to 2em */
+.not-important > p {
+	color: red;
+	margin-top: 0.1em;
+	margin-bottom: 2em;
+}
+
