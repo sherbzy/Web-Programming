@@ -1,4 +1,4 @@
-Module 5: LAMP
+Module 6: LAMP
 Note: this module was about going over the basics and did not include a coding project
 
 
