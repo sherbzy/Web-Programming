@@ -1,4 +1,5 @@
-CSS Module
+Module 3: CSS
+
 
 CSS Learning Goals
     1. CSS syntax: selectors and declarations
