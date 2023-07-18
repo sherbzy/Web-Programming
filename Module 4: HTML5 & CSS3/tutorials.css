@@ -1,0 +1,69 @@
+@media screen and (max-width: 600px) {
+	#menu {
+		background-color: white;
+		text-align: center;
+	}
+	
+
+	li a {
+		display: block;
+		border: thick black solid;
+		margin: 5px auto;
+		background-color: #ABFFAB;
+		border-radius: 50px;
+		width: 35%;
+	}
+}
+
+
+
+
+nav ul {
+	background-color: #ABFFAB;
+	list-style-type: none;
+	margin: 0;
+	padding: 8px;
+	overflow: hidden;
+}
+
+li {
+	display: inline;
+}
+
+nav li a{
+	color: black; 
+	text-decoration: none;
+	padding: 8px;
+	font-weight: bold;
+}
+
+
+
+
+header {
+	text-align: center;
+}
+
+section {
+	border: 12px black ridge;
+	padding: 4px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ABFFAB;
+	margin-bottom: 20px;
+}
+
+
+
+
+footer {
+	background-image: url("images/IceCream.jpeg");
+	height: 6em;
+	text-align: center;
+	border: thick #98ff98 solid;
+}
+
+footer p {
+	background-color: pink;
+	color: black;
+}
