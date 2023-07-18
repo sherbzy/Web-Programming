@@ -1,4 +1,4 @@
-HTML: Basics Module
+Module 2: HTML Basics
 
 HTML Learning Goals
     1. Structure of an HTML document 
