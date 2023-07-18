@@ -1,4 +1,4 @@
-World Wide Web Module
+Module 1: World Wide Web
 Note: this module was about going over the basics and did not include a coding project
 
 
