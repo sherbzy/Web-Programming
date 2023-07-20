@@ -1,7 +1,7 @@
 Module 7: jQuery
 
 
-JavaScript Learning Goals
+jQuery Learning Goals
     1. Why so many companies and developers rely on jQuery.
         ◦ “write less, do more” JavaScript library
         ◦ simplifies many of the common tasks you tend to do with JavaScript
