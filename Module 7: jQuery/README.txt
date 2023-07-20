@@ -1,6 +1,43 @@
 Module 7: jQuery
 
 
+Project Questions and Answers:
+Note: I used the firefox web browser for testing and development.
+1. What does this line do (note: I believe the site has a typo and should be repeat 5):
+	grid-template-columns: repeat(5, 1fr);
+	
+	The CSS "grid-template-columns" property is used to define how the grid's columns wil be displayed. The "repeat" function allows the
+	user to define a recurring pattern that the columns or rows will follow. The "fr" unit is a way to contain the rows or columns within a
+	fraction of the free space in the grid's container. Since the value indicated is "1fr", the line above creates 5 columns that fill the
+	grid space.
+	
+2. Explain the CSS that causes the header and footer to take up the entire width, while the main and aside each take up part of the width (with main having more space than aside).
+	grid-column: 1 / span 5;
+	
+	This line of code indicates that 1 grid column in the selected row or rows should "span" or take up 5 columns. The header and footer
+	used this to take up the entire width of the grid whereas the main and the aside take up 3 and 2 columns respectively.
+	
+3. What is your end-of-game effect? Copy just that code here, and explain what is the callback and what functions you are chaining.
+	// function called inside checkAnswer that tells the user that the game is over
+	function gameOver() {
+		$("#sidebar").append($('<p>').text("That's all folks!!!").hide());
+		$("#sidebar p").show("slow", moveStuffWithColors()).fadeOut("slow");
+	}
+
+	// used as a callback function, contains chaining
+	function moveStuffWithColors() {
+		$("#sidebar p").css("color", "purple")
+			.css("text-decoration", "black wavy underline")
+			.css("background-color", "white")
+			.slideUp(8000);
+	}
+	
+	The previous code snippet includes a callback function and chaining. The second line in the gameOver function
+
+
+
+
+
 jQuery Learning Goals
     1. Why so many companies and developers rely on jQuery.
         ◦ “write less, do more” JavaScript library
