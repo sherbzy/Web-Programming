@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="quiz.css" />
+		<title>Pirates of the Caribbean Quiz</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	</head>
+	<header>
+		<h1>Test your knowledge of Pirates of the Caribbean</h1>
+	</header>
+	
+	<body>
+		<main> <!-- content area for handling questions -->
+			<!-- box to display the question with a header -->
+			<h2>Question (select a category below):</h2>
+			<div id="questionText">
+				<p></p>
+			</div>
+			
+			<!-- box to accept the answer with a header -->
+			<h2>Answer:</h2>
+			<div id="answerBox">
+				<ul id="radioButtons">
+					<li>
+						<input type="radio" id="True" class="radio_buttons" name="true_false" value="TRUE">
+						<label for="True">True</label><br>										
+	  				</li>
+	  				<li>
+						<input type="radio" id="False" class="radio_buttons" name="true_false" value="FALSE">
+						<label for="False">False</label><br>
+	  				</li>
+	  			</ul>
+				<button id="checkAnswer">Check Answer</button>
+				<p id="checkAnswerResult"></p>
+			</div>
+			
+			
+			<!-- Four boxes to select a question -->
+			<div id="categoryButtons">
+				<button id="captainJackSparrow">Captain Jack Sparrow</button>
+				<button id="elizabethSwann">Elizabeth Swann</button>
+				<button id="williamTurner">William Turner</button>
+				<button id="pirateRagetti">Pirate Ragetti</button>
+			</div>
+		</main>
+		
+		<aside id="sidebar">	<!-- sidebar that lists the questions attempted -->
+			<h3>Questions History</h3>
+			<ul id="questionsAnswered">
+			</ul>
+		</aside>
+	</body>
+	
+	<footer>	<!-- footer with some generic info -->
+		<p>Created by Lauren Sherburne, just for fun :)</p>
+	</footer>
+	<script src="quiz.js"></script>
+</html>
