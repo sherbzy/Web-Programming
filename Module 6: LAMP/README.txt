@@ -1,5 +1,5 @@
 Module 6: LAMP
-Note: this module was about going over the basics and did not include a coding project
+Note: this module was about going over the LAMP stack basics and did not include a coding project
 
 
 LAMP Learning Goals
